@@ -7,8 +7,7 @@ class Patient
   end 
   
   def new_appointment(doctor, date) 
-    self.date.create do |appointment| 
-      appointment.doctor = self 
+    Appointment.new(self, doctor, date) 
     end 
   end 
   
