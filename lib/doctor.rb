@@ -9,6 +9,10 @@ class Doctor
     @@all_doc << self 
   end 
   
+  def self.all 
+    @@all_doc 
+  end 
+  
   def new_appointment(appointment)
     @appointments << appointment 
     apointment.doctor = self 
