@@ -6,9 +6,6 @@ class Patient
   
   def initialize(date) 
     @name = name 
-    @appointment = [] 
-    @doctor = [] 
-    @@all << self 
   end 
   
   def new_appointment(date, doctor) 
