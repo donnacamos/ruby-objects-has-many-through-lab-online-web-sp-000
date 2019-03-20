@@ -26,6 +26,6 @@ end
   end 
   
   def self.all 
-    @@all 
+    @@all_doc 
   end 
 end 
