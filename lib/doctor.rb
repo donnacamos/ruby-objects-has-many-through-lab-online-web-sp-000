@@ -18,7 +18,7 @@ class Doctor
   end 
   
   def appointments 
-    @appointments.all.select do |doctor| 
+    Appointment.all.select do |doctor| 
       doctor.appointment 
   end 
 end 
