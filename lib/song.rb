@@ -1,18 +1,24 @@
-class Song 
-  
-  @@all = [] 
-   
-  attr_accessor :name, :genre, :artist 
-  
-  def initialize(name, genre, artist)  
-    @name = name 
-    @genre = genre 
-    @artist = artist 
-    @@all << self  
-  end 
-  
-  def self.all 
-    @@all 
+equire 'pry'
+
+ class Song
+
+   attr_accessor :name, :artist, :genre
+
+   ALL = []
+
+   def initialize(name="", artist="", genre="")
+    @name = name
+    @artist = artist
+    @genre = genre
+    ALL << self
   end
-  
-end 
+
+   def self.all
+    ALL
+  end
+
+   def artist
+    @artist
+  end
+
+ end
